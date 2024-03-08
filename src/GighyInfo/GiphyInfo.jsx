@@ -1,7 +1,12 @@
 
 
-export default function GiphyInfo() {
+export default function GiphyInfo({ gifName }) {
+  console.log(gifName, 'gifName');
   return(
-    <h1>Giphy Info</h1>
+    <div>
+      <h1>Title: {}</h1>
+   <img src={gifName.data[0].images.original.url} alt="" />
+
+</div>
   )
 }
